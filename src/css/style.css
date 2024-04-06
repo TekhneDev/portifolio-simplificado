@@ -1,0 +1,133 @@
+html {
+    color: #fff;
+}
+
+body {
+    background-color: #282828;
+    font-family: "Orbitron";
+    /* margin: 0 auto 0 auto; */
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+.cabecalho {
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.cabecalho .logo {
+    background-color: rgba(255, 149, 0, 0.901);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 55px;
+
+    font-family: "Raleway", sans-serif;
+    transition: 0.3s;
+}
+
+.cabecalho a:hover .logo {
+    color: #36d0ff;
+    border: 2px solid #36d0ff;
+}
+
+.cabecalho .menu ul {
+    background-color: red;
+}
+
+.cabecalho .menu li a {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.cabecalho .menu li a:hover {
+    background-color: #36d0ff;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.home {
+    display: flex;
+    min-height: calc(100vh - 125px);
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.home .informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    max-width: 50%;
+}
+
+.home .informacoes h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.home .informacoes p {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home .redes-sociais {
+    width: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+.home .redes-sociais a i {
+    border: 1px solid #808080ba;
+    border-radius: 50%;
+    width: 75px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.home .redes-sociais a i:hover {
+    color: #36d0ff;
+    border: 1px solid #36d0ff;
+    transform: scale(1.2);
+}
+
+.home .container-foto .foto {
+    background-color: #36d0ff;
+    max-width: 450px;
+    border-radius: 50%;
+}
+
+.home .container-foto img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.home .foto.sombra-interna {
+    background: linear-gradient(to right, #36d0ff, #a77ce8, #8A35C8);
+}
+
+.projetos {
+    padding: 70px 0;
+}
+
+.projetos .titulo {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 45px;
+    font-weight: 500;
+}
