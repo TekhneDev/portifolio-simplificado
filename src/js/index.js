@@ -26,8 +26,30 @@
 const botaoMostrarProjetos = document.querySelector('.btn-mostrar-projetos');
 const projetosInativos = documentSelectorAll('.projeto:not(.ativo)'); // Por quê não pôs só "projeto"
 
+//console.log(projetosInativos);
+
+
 //Passo 2
 // Escuta de espião no botão
-botaoMostrarProjetos.addEventListener('click', () => { console.log('teste')});
+botaoMostrarProjetos.addEventListener('click', () => {
 
-//Passo 3
+    //Passo 3
+    mostrarMaisProjetos();
+
+    // Objetivo 2
+    //Passo 1
+    esconderBotao();
+});
+
+
+function esconderBotao() {
+    botaoMostrarProjetos.classList.add("remover");
+}
+
+function mostrarMaisProjetos() {
+    projetosInativos.forEach(projetoInativo => {
+        //console.log(projetosInativos);
+        projetoInativo.classList.add('ativo');
+    });
+}
+
